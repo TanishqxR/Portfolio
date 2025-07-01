@@ -1,21 +1,3 @@
-// Initialize EmailJS with your user ID
-  (function () {
-    emailjs.init("n_qTk6cUOM-jPofL2"); // e.g., emailjs.init("k03z1x12abcDEF");
-  })();
-
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    emailjs.sendForm("tanishq_xr", "template_ryk2h0e", this)
-      .then(() => {
-        alert("✅ Message sent successfully!");
-        this.reset(); // Optional: reset the form
-      }, (error) => {
-        alert("❌ Failed to send message. Try again!");
-        console.error(error);
-      });
-  });
-
 
 const navLinks = document.querySelectorAll('.nav-links a');
 
